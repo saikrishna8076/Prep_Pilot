@@ -87,58 +87,12 @@ Candidate Assessment Framework:
 
 ---
 
-## 🚀 **Getting Started**
+## 📈 **Project Highlights**
 
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/saikrishna8076/Prep_Pilot.git
-cd Prep_Pilot
-```
-
-### **2. Install Dependencies**
-```bash
-npm install
-```
-
-### **3. Configure Environment Variables**
-Create a `.env.local` file in the root directory:
-
-```env
-# Vapi AI Configuration
-NEXT_PUBLIC_VAPI_WEB_TOKEN=your_vapi_web_token
-NEXT_PUBLIC_VAPI_WORKFLOW_ID=your_vapi_assistant_id
-
-# Google Gemini AI Key
-GOOGLE_GENERATIVE_AI_API_KEY=your_gemini_api_key
-
-# Firebase Admin SDK Credentials
-FIREBASE_PROJECT_ID=your_firebase_project_id
-FIREBASE_CLIENT_EMAIL=your_firebase_client_email
-FIREBASE_PRIVATE_KEY="your_firebase_private_key"
-
-# Application Base URL
-NEXT_PUBLIC_BASE_URL=http://localhost:3000
-```
-
-### **4. Launch Development Server**
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-## 🌐 **Deployment on Vercel**
-
-1. Push your latest code to GitHub:
-   ```bash
-   git push origin main
-   ```
-2. Import the repository into **[Vercel](https://vercel.com)**.
-3. Add all environment variables from `.env.local` under **Project Settings → Environment Variables**.
-4. Set `NEXT_PUBLIC_BASE_URL` to your production Vercel domain.
-5. Deploy and enjoy your live AI mock interview platform!
+- **⚡ Low-Latency Voice Interactions**: Real-time bidirectional voice streaming with Vapi SDK
+- **🎯 100% Type-Safe Architecture**: End-to-end TypeScript enforcement across client and server
+- **🔒 Enterprise-Grade Security**: Secure session verification with Firebase Admin SDK
+- **📱 Responsive Design**: Seamless experience across mobile, tablet, and desktop displays
 
 ---
 
