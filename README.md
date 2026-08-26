@@ -1,75 +1,170 @@
-# 🎙️ PrepPilot — Real-Time AI Voice Mock Interview Platform
+# 🎙️ PrepPilot — Real-Time AI Voice Mock Interview & Evaluation Platform
 
-PrepPilot is an AI-powered mock interview platform designed to help developers and job seekers practice technical, behavioral, and mixed interviews in real-time. Powered by **Vapi AI** for voice conversations and **Google Gemini** for intelligent question generation and performance evaluation.
+<div align="center">
 
----
+![Next.js](https://img.shields.io/badge/Next.js-16.2.12-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)
+![Vapi AI](https://img.shields.io/badge/Vapi_AI-Voice_SDK-7B2CBF?style=for-the-badge&logo=soundcharts)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-2.0_Flash-4285F4?style=for-the-badge&logo=google)
+![Firebase](https://img.shields.io/badge/Firebase-Auth_&_Firestore-FFCA28?style=for-the-badge&logo=firebase)
 
-## ✨ Features
+**🧠 Full-Stack AI Interview Platform with Real-Time Conversational Voice Agents**
 
-- 🗣️ **Voice-Driven Interview Generation**: Converse with an AI assistant to customize your mock interview (role, tech stack, experience level, question count, and focus type).
-- 🎙️ **Live Voice Mock Interviews**: Practice interviews in real-time with an AI voice interviewer with natural conversational flow.
-- 📊 **Detailed AI Feedback & Scoring**: Instant scoring (0–100) across 5 core categories:
-  - Communication Skills
-  - Technical Knowledge
-  - Problem-Solving
-  - Cultural & Role Fit
-  - Confidence & Clarity
-- 🔐 **Authentication & Security**: Firebase Authentication with secure server-side session cookies.
-- 💾 **Database Integration**: Cloud Firestore for persistent interview storage, transcripts, and evaluation logs.
+*Real-time speech-to-speech interaction, intelligent question synthesis, and automated 5-dimension candidate assessment*
+
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## 🌟 **Revolutionary Features**
 
-- **Framework**: Next.js 16 (App Router, Server Actions)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Voice AI**: Vapi AI Web SDK
-- **LLM / AI Model**: Google Gemini 2.0 Flash via @ai-sdk/google & Vercel AI SDK
-- **Backend / Database**: Firebase Admin & Client SDK (Auth, Firestore)
-- **Deployment**: Vercel
+### 🗣️ **Conversational Voice Interview Setup**
+- **Natural Voice Onboarding**: Setup custom mock interviews conversationally with an AI voice agent.
+- **Dynamic Parameter Extraction**: Automatically captures role, experience level, tech stack, question count, and interview focus (Technical, Behavioral, or Mixed).
+- **Automated Webhook Synthesis**: Triggers serverless question generation workflows seamlessly via Vapi function calling.
+
+### 🎙️ **Real-Time Live Voice Interviewer**
+- **Low-Latency Conversational Audio**: Powered by Vapi AI Web SDK with Deepgram speech-to-text and ElevenLabs neural voices.
+- **Dynamic Question Pacing**: The AI interviewer asks questions, listens attentively, and adapts follow-ups in real time.
+- **Live Visual Call Waveforms**: Dynamic UI indicators displaying active speech detection and conversation status.
+
+### 🧠 **Google Gemini AI Evaluation Engine**
+- **Multi-Dimensional Candidate Scoring**: Powered by Gemini 2.0 Flash via `@ai-sdk/google` and structured Zod schemas.
+- **Comprehensive Score Matrix (0–100)**:
+  - 🗣️ **Communication Skills**: Articulation, clarity, and structured responses.
+  - 💻 **Technical Knowledge**: Depth of domain understanding and architectural concepts.
+  - 🧩 **Problem-Solving**: Logical reasoning, trade-off analysis, and solution delivery.
+  - 🤝 **Cultural & Role Fit**: Alignment with industry standards and engineering values.
+  - 🎯 **Confidence & Clarity**: Professional composure, conviction, and tone.
+- **Actionable Assessment**: Generates constructive feedback, strengths, and specific areas for candidate growth.
+
+### 🔐 **Enterprise Authentication & Session Security**
+- **Firebase Auth Integration**: Secure user registration and login workflows.
+- **Server-Side Session Validation**: Encrypted HTTP-only session cookies verified via Firebase Admin SDK.
+- **Protected App Routes**: Automatic redirection for unauthenticated access across private dashboard pages.
+
+### 📊 **Intelligent Candidate Dashboard**
+- **Interview History & Progress Tracking**: Unified dashboard displaying completed and pending interview sessions.
+- **Tech Stack Badges**: Visual icon rendering for frameworks, languages, and tools.
+- **Detailed Score Cards**: Instant visual preview of overall ratings and past performance.
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ **Cutting-Edge Technology Stack**
 
-### 1. Clone the Repository
+### **Frontend Architecture**
+- **Next.js 16 (App Router)** for fast server components and optimized streaming
+- **React 19** for modern concurrent UI rendering
+- **TypeScript** with strict type safety across all components
+- **Tailwind CSS** for responsive, modern dark-mode aesthetic styling
+- **React Hook Form & Zod** for schema-driven validation
+
+### **AI & Voice Intelligence**
+- **Vapi AI Web SDK (`@vapi-ai/web`)**: Real-time voice pipeline management
+- **Deepgram Nova-2**: High-accuracy real-time speech transcription
+- **ElevenLabs**: Human-grade conversational voice synthesis
+- **Google Gemini 2.0 Flash**: Intelligent question generation & structured feedback evaluation
+
+### **Backend & Database**
+- **Next.js Server Actions**: High-performance type-safe server operations
+- **Firebase Admin SDK**: Secure server-side Firestore database operations and token verification
+- **Firebase Client SDK**: Seamless client-side auth state handling
+- **Cloud Firestore**: Real-time document storage for users, interviews, and feedback reports
+
+---
+
+## 🎯 **AI Evaluation Matrix**
+
+```
+Candidate Assessment Framework:
+├── 🗣️ Communication (0-100):     Clarity, articulation & structured answers
+├── 💻 Technical Depth (0-100):    Core concepts, syntax & tech stack proficiency
+├── 🧩 Problem-Solving (0-100):   Analytical methodology & edge case handling
+├── 🤝 Role & Culture (0-100):     Team collaboration & industry alignment
+└── 🎯 Confidence (0-100):        Poise, conviction & engagement
+```
+
+---
+
+## 🚀 **Getting Started**
+
+### **1. Clone the Repository**
+```bash
 git clone https://github.com/saikrishna8076/Prep_Pilot.git
 cd Prep_Pilot
+```
 
-### 2. Install Dependencies
+### **2. Install Dependencies**
+```bash
 npm install
+```
 
-### 3. Set Up Environment Variables
-Create a .env.local file in the root directory and add the following keys:
+### **3. Configure Environment Variables**
+Create a `.env.local` file in the root directory:
 
+```env
+# Vapi AI Configuration
 NEXT_PUBLIC_VAPI_WEB_TOKEN=your_vapi_web_token
-NEXT_PUBLIC_VAPI_WORKFLOW_ID=your_vapi_workflow_or_assistant_id
+NEXT_PUBLIC_VAPI_WORKFLOW_ID=your_vapi_assistant_id
+
+# Google Gemini AI Key
 GOOGLE_GENERATIVE_AI_API_KEY=your_gemini_api_key
+
+# Firebase Admin SDK Credentials
 FIREBASE_PROJECT_ID=your_firebase_project_id
 FIREBASE_CLIENT_EMAIL=your_firebase_client_email
 FIREBASE_PRIVATE_KEY="your_firebase_private_key"
+
+# Application Base URL
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
+```
 
-### 4. Run the Development Server
+### **4. Launch Development Server**
+```bash
 npm run dev
+```
 
-Open http://localhost:3000 in your browser.
-
----
-
-## 🌐 Deployment
-
-Deploy easily to Vercel:
-
-1. Push your repository to GitHub.
-2. Import the project into Vercel.
-3. Add the environment variables in your Vercel Project Settings (Settings -> Environment Variables).
-4. Set NEXT_PUBLIC_BASE_URL to your live Vercel URL.
-5. Deploy!
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 📝 License
+## 🌐 **Deployment on Vercel**
 
-This project is open-source and available under the MIT License.
+1. Push your latest code to GitHub:
+   ```bash
+   git push origin main
+   ```
+2. Import the repository into **[Vercel](https://vercel.com)**.
+3. Add all environment variables from `.env.local` under **Project Settings → Environment Variables**.
+4. Set `NEXT_PUBLIC_BASE_URL` to your production Vercel domain.
+5. Deploy and enjoy your live AI mock interview platform!
+
+---
+
+## 👨‍💻 **Developer Profile**
+
+**Saikrishna** — Full-Stack & AI Systems Developer
+
+- **Core Technologies**: Next.js, React, TypeScript, Vapi AI, Google Gemini, Firebase
+- **Specialization**: Conversational AI Agents, Voice Applications, Modern Full-Stack Platforms
+- **Repository**: [github.com/saikrishna8076/Prep_Pilot](https://github.com/saikrishna8076/Prep_Pilot)
+
+---
+
+## 📄 **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+
+**⭐ Star this repository if you find it helpful! ⭐**
+
+*Built with ❤️ and modern Voice AI technology*
+
+[![GitHub stars](https://img.shields.io/github/stars/saikrishna8076/Prep_Pilot?style=social)](https://github.com/saikrishna8076/Prep_Pilot)
+[![GitHub forks](https://img.shields.io/github/forks/saikrishna8076/Prep_Pilot?style=social)](https://github.com/saikrishna8076/Prep_Pilot)
+
+</div>
