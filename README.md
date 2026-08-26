@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎙️ PrepPilot — Real-Time AI Voice Mock Interview Platform
 
-## Getting Started
+PrepPilot is an AI-powered mock interview platform designed to help developers and job seekers practice technical, behavioral, and mixed interviews in real-time. Powered by **Vapi AI** for voice conversations and **Google Gemini** for intelligent question generation and performance evaluation.
 
-First, run the development server:
+---
 
-```bash
+## ✨ Features
+
+- 🗣️ **Voice-Driven Interview Generation**: Converse with an AI assistant to customize your mock interview (role, tech stack, experience level, question count, and focus type).
+- 🎙️ **Live Voice Mock Interviews**: Practice interviews in real-time with an AI voice interviewer with natural conversational flow.
+- 📊 **Detailed AI Feedback & Scoring**: Instant scoring (0–100) across 5 core categories:
+  - Communication Skills
+  - Technical Knowledge
+  - Problem-Solving
+  - Cultural & Role Fit
+  - Confidence & Clarity
+- 🔐 **Authentication & Security**: Firebase Authentication with secure server-side session cookies.
+- 💾 **Database Integration**: Cloud Firestore for persistent interview storage, transcripts, and evaluation logs.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16 (App Router, Server Actions)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Voice AI**: Vapi AI Web SDK
+- **LLM / AI Model**: Google Gemini 2.0 Flash via @ai-sdk/google & Vercel AI SDK
+- **Backend / Database**: Firebase Admin & Client SDK (Auth, Firestore)
+- **Deployment**: Vercel
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+git clone https://github.com/saikrishna8076/Prep_Pilot.git
+cd Prep_Pilot
+
+### 2. Install Dependencies
+npm install
+
+### 3. Set Up Environment Variables
+Create a .env.local file in the root directory and add the following keys:
+
+NEXT_PUBLIC_VAPI_WEB_TOKEN=your_vapi_web_token
+NEXT_PUBLIC_VAPI_WORKFLOW_ID=your_vapi_workflow_or_assistant_id
+GOOGLE_GENERATIVE_AI_API_KEY=your_gemini_api_key
+FIREBASE_PROJECT_ID=your_firebase_project_id
+FIREBASE_CLIENT_EMAIL=your_firebase_client_email
+FIREBASE_PRIVATE_KEY="your_firebase_private_key"
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+
+### 4. Run the Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Deployment
 
-## Learn More
+Deploy easily to Vercel:
 
-To learn more about Next.js, take a look at the following resources:
+1. Push your repository to GitHub.
+2. Import the project into Vercel.
+3. Add the environment variables in your Vercel Project Settings (Settings -> Environment Variables).
+4. Set NEXT_PUBLIC_BASE_URL to your live Vercel URL.
+5. Deploy!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-source and available under the MIT License.
